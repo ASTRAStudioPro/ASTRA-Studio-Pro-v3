@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.astra.studio'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.astra.studio"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    implementation "androidx.activity:activity-compose:1.9.0"
+    implementation platform("androidx.compose:compose-bom:2024.06.00")
+    implementation "androidx.compose.material3:material3"
+    implementation "androidx.navigation:navigation-compose:2.7.7"
+    implementation "androidx.media3:media3-exoplayer:1.4.1"
+    implementation "androidx.media3:media3-ui:1.4.1"
+    implementation "com.arthenica:ffmpeg-kit-full:6.0"
+    implementation "com.microsoft.onnxruntime:onnxruntime-android:1.18.0"
+}
