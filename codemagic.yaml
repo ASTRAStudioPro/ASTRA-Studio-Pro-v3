@@ -1,0 +1,12 @@
+workflows:
+  android-release:
+    name: ASTRA Studio Pro v3 APK
+    environment:
+      android_signing:
+        - astra_keystore
+      groups:
+        - google_credentials
+    scripts:
+      - ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/**/*.apk

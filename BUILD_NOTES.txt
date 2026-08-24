@@ -1,0 +1,9 @@
+For the person/build service:
+
+Build this Android Studio project.
+Create a release APK.
+Sign it with a provided keystore.
+Return the installable APK file.
+
+Project name:
+ASTRA Studio Pro v3
